@@ -62,6 +62,7 @@ class General:
     @commands.check(is_owner)
     async def shutdown(self, ctx):
         """Simple shutdown command"""
+        await ctx.bot.logout()
         exit()
 
 
